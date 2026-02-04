@@ -12,7 +12,22 @@ namespace Convertidor_decimal_a_binario
         {
             Console.WriteLine("Ingrese un numero decimal: ");
             int numeroDecimal = int.Parse(Console.ReadLine());
-         
+            while (numeroDecimal != 0)
+            {
+                if (numeroDecimal % 2 != 0)
+                {
+                    Console.WriteLine("El numero binario es: 1");
+                }
+                else
+                {
+                    Console.WriteLine("El numero binario es: 0");
+
+
+                }
+            }
         }
     }
 }
+       
+    
+
