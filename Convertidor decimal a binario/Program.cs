@@ -10,19 +10,19 @@ namespace Convertidor_decimal_a_binario
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Ingrese un numero decimal: ");
-            int numeroDecimal = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese un numero decimal: ");//pedimos el numero decimal al usuario
+            int numeroDecimal = int.Parse(Console.ReadLine());//leemos el numero ingresado y lo convertimos a entero
 
             string numeroBinario = ""; // Inicializar la variable antes de usarla
 
-            while (numeroDecimal > 0)
+            while (numeroDecimal > 0)//mientras el numero decimal sea mayor a 0 
             {
                 int residuo = numeroDecimal % 2; // obtengo el residuo
-                numeroBinario = residuo + numeroBinario;
+                numeroBinario = residuo + numeroBinario;//guardo el residuo en la variable numeroBinario
                 numeroDecimal = numeroDecimal / 2; // actualizo el numero decimal
             }
 
-            Console.WriteLine("El número binario es: " + numeroBinario);
+            Console.WriteLine("El número binario es: " + numeroBinario);//muestro el resultado
         }
     }
 }
